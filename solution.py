@@ -1,9 +1,8 @@
 import numpy as np
 
 
-A = [0, 1]
+A = [1, 1]
 B = [2, 0]
-
 
 POINTS = [
     [0, 0],
@@ -23,3 +22,7 @@ def reference_transformation(A, B, point):
 
 
 print(reference_transformation(A, B, A))  # [0.0, 0.0]
+
+
+for point in POINTS:
+  print(point, "->", reference_transformation(A, B, point))
